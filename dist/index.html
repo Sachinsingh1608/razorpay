@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razorpay </title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="icon" type="image/x-icon" href="./imag/razorpay-glyph.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-Do1chRTa.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-LIdnmwPS.css">
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="bg-deepBlue ">
+    <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
+
+      <!-- logo -->
+      <a href="/" class="cursor-pointer py-7 pr-7">
+        <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTg5NiA0MDEiIGZvY3VzYWJsZT0iZmFsc2UiIGNsYXNzPSJjaGFrcmEtaWNvbiBjc3MtMXh5NjJsZiIgZmlsbD0nI2ZmZicgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMzM5NUZGIiBkPSJNMTIyLjYzIDEwNS43bC0xNS43NSA1Ny45NyA5MC4xNS01OC4zLTU4Ljk2IDIxOS45OCA1OS44OC4wNUwyODUuMDUuNDgiPjwvcGF0aD48cGF0aCBkPSJNMjUuNiAyMzIuOTJMLjggMzI1LjRoMTIyLjczbDUwLjIyLTE4OC4xM0wyNS42IDIzMi45Mm00MjYuMzItODEuNDJjLTMgMTEuMTUtOC43OCAxOS4zNC0xNy40IDI0LjU3LTguNiA1LjIyLTIwLjY3IDcuODQtMzYuMjUgNy44NGgtNDkuNWwxNy4zOC02NC44aDQ5LjVjMTUuNTYgMCAyNi4yNSAyLjYgMzIuMDUgNy45IDUuOCA1LjMgNy4yIDEzLjQgNC4yMiAyNC42bTUxLjI1LTEuNGM2LjMtMjMuNCAzLjctNDEuNC03LjgyLTU0LTExLjUtMTIuNS0zMS42OC0xOC44LTYwLjQ4LTE4LjhIMzI0LjRsLTY2LjUgMjQ4LjFoNTMuNjdsMjYuOC0xMDBoMzUuMmM3LjkgMCAxNC4xMiAxLjMgMTguNjYgMy44IDQuNTUgMi42IDcuMjIgNy4xIDguMDQgMTMuNmw5LjU4IDgyLjZoNTcuNWwtOS4zMi03N2MtMS45LTE3LjItOS43Ny0yNy4zLTIzLjYtMzAuMyAxNy42My01LjEgMzIuNC0xMy42IDQ0LjMtMjUuNGE5Mi42IDkyLjYgMCAwIDAgMjQuNDQtNDIuNW0xMzAuNDYgODYuNGMtNC41IDE2LjgtMTEuNCAyOS41LTIwLjczIDM4LjQtOS4zNCA4LjktMjAuNSAxMy4zLTMzLjUyIDEzLjMtMTMuMjYgMC0yMi4yNS00LjMtMjctMTMtNC43Ni04LjctNC45Mi0yMS4zLS41LTM3LjggNC40Mi0xNi41IDExLjQ3LTI5LjQgMjEuMTctMzguNyA5LjctOS4zIDIxLjA0LTEzLjk1IDM0LjA2LTEzLjk1IDEzIDAgMjEuOSA0LjUgMjYuNCAxMy40MyA0LjYgOC45NyA0LjcgMjEuOC4yIDM4LjV6bTIzLjUyLTg3LjhsLTYuNzIgMjUuMWMtMi45LTktOC41My0xNi4yLTE2Ljg1LTIxLjYtOC4zNC01LjMtMTguNjYtOC0zMC45Ny04LTE1LjEgMC0yOS42IDMuOS00My41IDExLjctMTMuOSA3LjgtMjYuMSAxOC44LTM2LjUgMzMtMTAuNCAxNC4yLTE4IDMwLjMtMjIuOSA0OC40LTQuOCAxOC4yLTUuOCAzNC4xLTIuOSA0Ny45IDMgMTMuOSA5LjMgMjQuNSAxOSAzMS45IDkuOCA3LjUgMjIuMyAxMS4yIDM3LjYgMTEuMmE4Mi40IDgyLjQgMCAwIDAgMzUuMi03LjcgODIuMTEgODIuMTEgMCAwIDAgMjguNC0yMS4ybC03IDI2LjE2aDUxLjlMNzA5LjMgMTQ5aC01MnptMjM4LjY1IDBINzQ0Ljg3bC0xMC41NSAzOS40aDg3LjgybC0xMTYuMSAxMDAuMy05LjkyIDM3aDE1NS44bDEwLjU1LTM5LjRoLTk0LjFsMTE3Ljg4LTEwMS44bTE0Mi40IDUyYy00LjY3IDE3LjQtMTEuNiAzMC40OC0yMC43NSAzOS05LjE1IDguNi0yMC4yMyAxMi45LTMzLjI0IDEyLjktMjcuMiAwLTM2LjE0LTE3LjMtMjYuODYtNTEuOSA0LjYtMTcuMiAxMS41Ni0zMC4xMyAyMC44Ni0zOC44NCA5LjMtOC43NCAyMC41Ny0xMy4xIDMzLjgyLTEzLjEgMTMgMCAyMS43OCA0LjMzIDI2LjMgMTMuMDUgNC41MiA4LjcgNC40OCAyMS42Ny0uMTMgMzguODdtMzAuMzgtODAuODNjLTExLjk1LTcuNDQtMjcuMi0xMS4xNi00NS44LTExLjE2LTE4LjgzIDAtMzYuMjYgMy43LTUyLjMgMTEuMWExMTMuMDkgMTEzLjA5IDAgMCAwLTQxIDMyLjA2Yy0xMS4zIDEzLjktMTkuNDMgMzAuMi0yNC40MiA0OC44LTQuOSAxOC41My01LjUgMzQuOC0xLjcgNDguNzMgMy44IDEzLjkgMTEuOCAyNC42IDIzLjggMzIgMTIuMSA3LjQ2IDI3LjUgMTEuMTcgNDYuNCAxMS4xNyAxOC42IDAgMzUuOS0zLjc0IDUxLjgtMTEuMTggMTUuOS03LjQ4IDI5LjUtMTguMSA0MC44LTMyLjEgMTEuMy0xMy45NCAxOS40LTMwLjIgMjQuNC00OC44IDUtMTguNiA1LjYtMzQuODQgMS44LTQ4LjgtMy44LTEzLjktMTEuNy0yNC42LTIzLjYtMzIuMDVtMTg1LjEgNDAuOGwxMy4zLTQ4LjFjLTQuNS0yLjMtMTAuNC0zLjUtMTcuOC0zLjUtMTEuOSAwLTIzLjMgMi45NC0zNC4zIDguOS05LjQ2IDUuMDYtMTcuNSAxMi4yLTI0LjMgMjEuMTRsNi45LTI1LjktMTUuMDcuMDZoLTM3bC00Ny43IDE3Ni43aDUyLjYzbDI0Ljc1LTkyLjM3YzMuNi0xMy40MyAxMC4wOC0yNCAxOS40My0zMS41IDkuMy03LjUzIDIwLjktMTEuMyAzNC45LTExLjMgOC42IDAgMTYuNiAxLjk3IDI0LjIgNS45bTE0Ni41IDQxLjFjLTQuNSAxNi41LTExLjMgMjkuMS0yMC42IDM3LjgtOS4zIDguNzQtMjAuNSAxMy4xLTMzLjUgMTMuMXMtMjEuOS00LjQtMjYuNi0xMy4yYy00LjgtOC44NS00LjktMjEuNi0uNC0zOC4zNiA0LjUtMTYuNzUgMTEuNC0yOS42IDIwLjktMzguNSA5LjUtOC45NyAyMC43LTEzLjQ1IDMzLjctMTMuNDUgMTIuOCAwIDIxLjQgNC42IDI2IDEzLjkgNC42IDkuMyA0LjcgMjIuMi4yOCAzOC43bTM2LjgtODEuNGMtOS43NS03LjgtMjIuMi0xMS43LTM3LjMtMTEuNy0xMy4yMyAwLTI1Ljg0IDMtMzcuOCA5LjA2LTExLjk1IDYuMDUtMjEuNjUgMTQuMy0yOS4xIDI0Ljc0bC4xOC0xLjIgOC44My0yOC4xaC01MS40bC0xMy4xIDQ4LjktLjQgMS43LTU0IDIwMS40NGg1Mi43bDI3LjItMTAxLjRjMi43IDkuMDIgOC4yIDE2LjEgMTYuNiAyMS4yMiA4LjQgNS4xIDE4Ljc3IDcuNjMgMzEuMSA3LjYzIDE1LjMgMCAyOS45LTMuNyA0My43NS0xMS4xIDEzLjktNy40MiAyNS45LTE4LjEgMzYuMS0zMS45IDEwLjItMTMuOCAxNy43Ny0yOS44IDIyLjYtNDcuOSA0LjktMTguMTMgNS45LTM0LjMgMy4xLTQ4LjQ1LTIuODUtMTQuMTctOS4xNi0yNS4xNC0xOC45LTMyLjltMTc0LjY1IDgwLjY1Yy00LjUgMTYuNy0xMS40IDI5LjUtMjAuNyAzOC4zLTkuMyA4Ljg2LTIwLjUgMTMuMjctMzMuNSAxMy4yNy0xMy4zIDAtMjIuMy00LjMtMjctMTMtNC44LTguNy00LjktMjEuMy0uNS0zNy44IDQuNC0xNi41IDExLjQyLTI5LjQgMjEuMTItMzguNyA5LjctOS4zIDIxLjA1LTEzLjk0IDM0LjA3LTEzLjk0IDEzIDAgMjEuOCA0LjUgMjYuNCAxMy40IDQuNiA4LjkzIDQuNjMgMjEuNzYuMTUgMzguNXptMjMuNS04Ny44NWwtNi43MyAyNS4xYy0yLjktOS4wNS04LjUtMTYuMjUtMTYuOC0yMS42LTguNC01LjM0LTE4LjctOC0zMS04LTE1LjEgMC0yOS42OCAzLjktNDMuNiAxMS43LTEzLjkgNy44LTI2LjEgMTguNzQtMzYuNSAzMi45LTEwLjQgMTQuMTYtMTggMzAuMy0yMi45IDQ4LjQtNC44NSAxOC4xNy01LjggMzQuMS0yLjkgNDcuOTYgMi45MyAxMy44IDkuMjQgMjQuNDYgMTkgMzEuOSA5Ljc0IDcuNCAyMi4zIDExLjE0IDM3LjYgMTEuMTQgMTIuMyAwIDI0LjA1LTIuNTYgMzUuMi03LjdhODIuMyA4Mi4zIDAgMCAwIDI4LjMzLTIxLjIzbC03IDI2LjE4aDUxLjlsNDcuMzgtMTc2LjdoLTUxLjl6bTI2OS44Ny4wNmwuMDMtLjA1aC0zMS45Yy0xLjAyIDAtMS45Mi4wNS0yLjg1LjA3aC0xNi41NWwtOC41IDExLjgtMi4xIDIuOC0uOSAxLjQtNjcuMjUgOTMuNjgtMTMuOS0xMDkuN2gtNTUuMDhsMjcuOSAxNjYuNy02MS42IDg1LjNoNTQuOWwxNC45LTIxLjEzYy40Mi0uNjIuOC0xLjE0IDEuMy0xLjhsMTcuNC0yNC43LjUtLjcgNzcuOTMtMTEwLjUgNjUuNy05MyAuMS0uMDZoLS4wM3oiPjwvcGF0aD48L3N2Zz4=" width="125px" height="30px" />
+      </a>
+
+      <ul class="flex space-x-6">
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Payments</a>
+
+          <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
+           transition-all duration-200"></div>
+        </li>
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Banking</a>
+
+          <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
+           transition-all duration-200"></div>
+        </li>
+
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Corporate Card</a>
+
+        </li>
+
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Payroll</a>
+
+        </li>
+
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Resources</a>
+
+          <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
+           transition-all duration-200"></div>
+        </li>
+
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Support</a>
+
+          <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
+           transition-all duration-200"></div>
+        </li>
+
+
+        <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group hidden lg:block">
+          <a href="#">Pricing</a>
+
+          <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
+           transition-all duration-200"></div>
+        </li>
+      </ul>
+
+      <div class="flex gap-2">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='28'%20height='20'%20viewBox='0%200%2028%2020'%3e%3cdefs%3e%3cfilter%20id='a'%20width='129.2%25'%20height='143.8%25'%20x='-14.6%25'%20y='-15.6%25'%20filterUnits='objectBoundingBox'%3e%3cfeOffset%20dy='1'%20in='SourceAlpha'%20result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur%20in='shadowOffsetOuter1'%20result='shadowBlurOuter1'%20stdDeviation='1'/%3e%3cfeColorMatrix%20in='shadowBlurOuter1'%20result='shadowMatrixOuter1'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.12%200'/%3e%3cfeMerge%3e%3cfeMergeNode%20in='shadowMatrixOuter1'/%3e%3cfeMergeNode%20in='SourceGraphic'/%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3cg%20fill='none'%20filter='url(%23a)'%20transform='translate(2%201)'%3e%3cpath%20fill='%23FAB446'%20d='M23.95%205.34H0V.44C0%20.2.18%200%20.41%200h23.13c.23%200%20.41.2.41.42v4.9z'/%3e%3cpath%20fill='%2373AF00'%20d='M23.54%2015.99H.41a.42.42%200%200%201-.41-.42v-4.9h23.95v4.9c0%20.23-.18.42-.41.42z'/%3e%3cpath%20fill='%23F5F5F5'%20d='M0%205.34h23.95v5.32H0z'/%3e%3cg%20fill='%2341479B'%20transform='translate(9.73%205.71)'%3e%3cpath%20d='M2.25%204.55A2.24%202.24%200%200%201%20.03%202.29c0-1.25%201-2.26%202.22-2.26a2.24%202.24%200%200%201%202.22%202.26c0%201.24-1%202.26-2.22%202.26zm0-4.1c-1%200-1.81.82-1.81%201.84a1.81%201.81%200%201%200%203.62.01c0-1.02-.8-1.84-1.8-1.84z'/%3e%3cellipse%20cx='2.25'%20cy='2.29'%20rx='1'%20ry='1'/%3e%3cpath%20d='M2.22%202.31l-.5-.41L.8.86.85.81l1.02.94.4.5zm0%200l.4.51%201.02.94.06-.05-.93-1.04-.5-.41z'/%3e%3cpath%20d='M2.22%202.26l.4-.5L3.65.8l.06.05-.93%201.04-.5.41zm0%200l-.5.41L.8%203.71l.05.05%201.02-.94.4-.5z'/%3e%3cpath%20d='M2.26%202.32l-.57.31-1.29.48-.03-.08%201.25-.6.61-.18z'/%3e%3cpath%20d='M2.26%202.32l.62-.19%201.24-.6-.03-.06-1.3.47-.56.31z'/%3e%3cpath%20d='M2.21%202.3l-.3-.58L1.44.41l.07-.03.59%201.26.18.63z'/%3e%3cpath%20d='M2.21%202.3l.19.63.58%201.26.07-.03-.47-1.31-.3-.58z'/%3e%3cpath%20d='M2.23%202.32l-.61-.19-1.25-.6.03-.06%201.3.47.56.31z'/%3e%3cpath%20d='M2.23%202.32l.57.31%201.3.48.02-.08-1.24-.6-.62-.18z'/%3e%3cpath%20d='M2.21%202.27l.19-.63.58-1.26.07.03-.47%201.31-.3.58zm0%200l-.3.58-.47%201.31.07.03.59-1.26.18-.63z'/%3e%3c/g%3e%3cellipse%20cx='11.98'%20cy='8'%20fill='%23F5F5F5'%20rx='1'%20ry='1'/%3e%3c/g%3e%3c/svg%3e" width="28px" height="20px" class="hidden lg:block" />
+        <button class="py-3 px-5 font-mullish text-white border-lightBlue border
+           rounded-sm text-sm  font-semibold">Log in</button>
+        <button class="py-3 px-4 font-mullish rounded-sm text-sm 
+           bg-white text-lightBlue300 border transition-all duration-200
+           hover:text-lightBlue500 hidden lg:flex font-semibold">Sign Up
+          <svg viewBox="1 1 19 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+          </svg></button>
+      </div>
+
+
+    </div>
+  </nav>
+  <!---Hero-->
+  <section class="relative bg-deepBlue ">
+    <div class="flex flex-row justify-between items-center mx-auto w-10/12 max-w-[1080px]">
+      <!--left -part-->
+      <div class="space-y-8">
+        <h1 class="font-mullish text-[40px] font-bold leading-[1.2] text-white">To win customer trust, Razorpay is a
+          must</h1>
+        <div class="w-6 h-1 bg-greenLight"></div>
+        <p class="font-mullish text-[18px] text-white leading-7 opacity-70">An RBI Authorised Payment Aggregator, we
+          ensure your transactions are secure.</p>
+        <button class="bg-lightBlue  text-white font-mullish font-bold hover:bg-lightBlue500 w-[170px] h-[50px]  rounded-md flex  items-center justify-center
+            ">Sign Up Now
+          <svg viewBox="1 1 19 24" focusable="false" class="w-[14px] h-[14px] relative ">
+            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+          </svg>
+        </button>
+      </div>
+      <!--righ -part-->
+      <img class=" w-full max-w-[680px]" src="/assets/hero-illustration-CxSzr_zN.jpg">
+
+    </div>
+    <!--shape-part-->
+    <div class="w-[103%] absolute left-0 right-0">
+      <img class="w-full object-fill " src="data:image/svg+xml,%3csvg%20viewBox='0%200%201446%20199'%20focusable='false'%20class='chakra-icon%20css-1w3t3sf'%20xmlns='http://www.w3.org/2000/svg'%20preserveAspectRatio='none'%20%3e%3cpath%20d='M%20-6%2068.5%20V%200%20H%201445%20V%2091%20L%201289%20170%20L%20-6%2068.5%20Z'%20fill='%2302042B'%20%3e%3c/path%3e%3c/svg%3e" alt="">
+    </div>
+  </section>
+  <!--feature section-->
+  <section class="relative mt-[190px] overflow-hidden">
+    <img src="data:image/png;base64,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" alt="" loading="lazy" width="233" height="167"
+      class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
+
+    <img src="data:image/png;base64,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" alt="" loading="lazy" width="233" height="167"
+      class="absolute top-[3rem] right-0 inline-block rotate-180">
+
+    <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+      <!--heading-->
+      <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with
+        Razorpay Payment Suite</h2>
+
+      <h2 class="font-mullish text-center text-5xl leading-[1.2] font-extrabold  md:hidden">Explore Razorpay Payment
+        Suite</h2>
+
+
+      <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+      <!--content box-->
+      <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
+        <!--left section-->
+        <div class="flex flex-col justify-between  w-full">
+          <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">
+            Supercharge your business with the all‑powerful
+            <span class="text-lightBlue">Payment Gateway</span>
+          </h3>
+          <ul class="space-y-3.5">
+            <li class="font-mullish flex items-center space-x-2">
+
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>100+ Payment Methods</span>
+            </li>
+            <li class="font-mullish flex items-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Industry Leading Success Rate </span>
+            </li>
+            <li class="font-mullish flex items-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Superior Checkout Experience </span>
+            </li>
+            <li class="font-mullish flex items-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Easy to Integrate </span>
+            </li>
+            <li class="font-mullish flex items-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Instant Settlements from day 1 </span>
+            </li>
+            <li class="font-mullish flex items-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> In-depth Reporting and Insights </span>
+            </li>
+          </ul>
+
+          <!-- for button and hyperlink-->
+          <div class="flex flex-col-reverse md:flex-row items-center space-x-4 ">
+            <button class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md
+                font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200 ">Sign Up Now</button>
+            <!--hyperlink-->
+            <div class="flex self-start md:items-center cursor-pointer group mt-3">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                    group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                    group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+
+        </div>
+        <img src="/assets/payment-suite-fhKuLaJR.png" alt=""
+          class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
+      </div>
+      <!--box-->
+      <div class="w-full grid grid-cols-3 gap-4 mt-6">
+        <!--box1-->
+        <div class="w-full min-h-[15rem] relative cursor-pointer :hover drop-shadow-2xl ">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="/assets/payment-link-icon-DxqCdkQn.svg" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem]">Payment Links</h2>
+              <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately.</p>
+            </div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--box2-->
+
+        <div class="w-full min-h-[15rem] relative cursor-pointer :hover drop-shadow-2xl ">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M18.2099%2012.5259H10.0695V18.3478L18.2099%2018.3478L18.2099%2012.5259ZM10.0695%2010.7997C9.11612%2010.7997%208.34326%2011.5725%208.34326%2012.5259V18.3478C8.34326%2019.3011%209.11612%2020.074%2010.0695%2020.074H18.2099C19.1633%2020.074%2019.9362%2019.3011%2019.9362%2018.3478V12.5259C19.9362%2011.5725%2019.1633%2010.7997%2018.2099%2010.7997H10.0695Z'%20fill='white'/%3e%3cpath%20d='M15.8226%2016.5962C15.8226%2017.2364%2015.3161%2017.7555%2014.6913%2017.7555C14.0665%2017.7555%2013.5601%2017.2364%2013.5601%2016.5962C13.5601%2015.9559%2014.0665%2015.4369%2014.6913%2015.4369C15.3161%2015.4369%2015.8226%2015.9559%2015.8226%2016.5962Z'%20fill='white'/%3e%3cpath%20d='M17.2137%2016.5964C17.2137%2017.2366%2016.7072%2017.7557%2016.0824%2017.7557C15.4577%2017.7557%2014.9512%2017.2366%2014.9512%2016.5964C14.9512%2015.9561%2015.4577%2015.4371%2016.0824%2015.4371C16.7072%2015.4371%2017.2137%2015.9561%2017.2137%2016.5964Z'%20fill='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.6658%2012.4201C19.6702%2012.4698%2019.6725%2012.5202%2019.6725%2012.571V13.9906H20.3825C20.9679%2013.9906%2021.4425%2013.6109%2021.4425%2013.1426C21.4425%2012.6742%2020.9679%2012.2946%2020.3825%2012.2946H19.6499C19.6567%2012.3359%2019.6621%2012.3778%2019.6658%2012.4201Z'%20fill='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M23.3152%2019.3813L21.4338%2019.3809C21.423%2019.3809%2021.4122%2019.381%2021.4014%2019.3813C21.4122%2019.381%2021.423%2019.3809%2021.4338%2019.3809L21.4338%2019.3813L23.3152%2019.3813ZM10.4074%2022.0945V19.9328H10.66V22.0945C10.66%2022.6277%2011.1048%2023.0716%2011.6622%2023.0716H19.9245L19.9245%2023.0689V20.6093C19.9245%2019.7831%2020.6055%2019.1283%2021.4338%2019.1283H21.6864L23.3152%2019.1287C23.395%2019.1287%2023.472%2019.1427%2023.5435%2019.1683V8.97699C23.5435%208.44405%2023.1002%208.00232%2022.5404%208.00232H10.66V10.8874H10.4074L10.4074%207.74978V11.0141H10.0269C9.86889%2011.0141%209.71593%2011.0358%209.5709%2011.0766L9.5709%2010.9564C9.48355%2010.9823%209.39916%2011.015%209.31836%2011.0541V6.67749H22.5404C23.8299%206.67749%2024.8851%207.70146%2024.8851%208.97699V21.2341L24.6956%2021.4269L21.976%2024.1949L21.7781%2024.396H11.6622C10.3731%2024.396%209.31836%2023.3683%209.31836%2022.0941V19.7662C9.39916%2019.8052%209.48355%2019.8379%209.5709%2019.8638L9.5709%2019.9969C9.71593%2020.0376%209.86889%2020.0594%2010.0269%2020.0594H10.4074L10.4074%2022.0945ZM23.801%2021.9771L24.6237%2021.1398L24.5154%2021.25L23.801%2021.9771ZM22.5404%206.93003H9.5709V6.93004H9.98917L22.5404%206.93003ZM23.3152%2020.4532C23.395%2020.4532%2023.472%2020.4392%2023.5435%2020.4136V20.6968L21.2665%2023.0146V20.6093C21.2665%2020.528%2021.3334%2020.4532%2021.4338%2020.4532H23.3152Z'%20fill='white'/%3e%3c/svg%3e" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem] ">Payment Page</h2>
+              <p class="font-mullish text-grayText mt-6"> Accept international and domestic payments with automated payment receipts.</div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+        <!--box3-->
+
+
+        <div class="w-full min-h-[15rem] relative cursor-pointer :hover drop-shadow-2xl ">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='44'%20height='44'%20viewBox='0%200%2044%2044'%20fill='none'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.0933%2017.875C14.0933%2014.2679%2017.0175%2011.3438%2020.6246%2011.3438H30.2496C33.8567%2011.3438%2036.7808%2014.2679%2036.7808%2017.875C36.7808%2021.4821%2033.8567%2024.4062%2030.2496%2024.4062H20.6246C17.0175%2024.4062%2014.0933%2021.4821%2014.0933%2017.875ZM20.6246%2013.4062C18.1566%2013.4062%2016.1558%2015.407%2016.1558%2017.875C16.1558%2020.343%2018.1566%2022.3438%2020.6246%2022.3438H30.2496C32.7176%2022.3438%2034.7183%2020.343%2034.7183%2017.875C34.7183%2015.407%2032.7176%2013.4062%2030.2496%2013.4062H20.6246Z'%20fill='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.7001%2018.2188H15.1246C11.5175%2018.2188%208.59332%2021.1429%208.59332%2024.75C8.59332%2028.3571%2011.5175%2031.2812%2015.1246%2031.2812H24.7496C28.3567%2031.2812%2031.2808%2028.3571%2031.2808%2024.75C31.2808%2024.2892%2031.2331%2023.8395%2031.1423%2023.4056C30.8924%2023.4529%2030.6345%2023.4776%2030.3708%2023.4776H29.0346C29.1541%2023.8809%2029.2183%2024.3079%2029.2183%2024.75C29.2183%2027.218%2027.2176%2029.2188%2024.7496%2029.2188H15.1246C12.6566%2029.2188%2010.6558%2027.218%2010.6558%2024.75C10.6558%2022.282%2012.6566%2020.2812%2015.1246%2020.2812H15.805C15.7364%2019.9828%2015.7001%2019.6719%2015.7001%2019.3526V18.2188Z'%20fill='white'/%3e%3c/svg%3e" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem]">Payment Button.</h2>
+              <p class="font-mullish text-grayText mt-6">Create, Copy & Collect With Payment Button. Collect one time or subscription payments & more.</p>
+            </div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+        <!--box4-->
+
+        <div class="w-full min-h-[15rem] relative cursor-pointer :hover drop-shadow-2xl ">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.9149%209.37312L22.4137%209.37312L22.4137%2018.0711L11.9149%2018.0711L11.9149%209.37312ZM10.2841%209.37312C10.2841%208.47241%2011.0142%207.74225%2011.9149%207.74225H22.4137C23.3144%207.74225%2024.0445%208.47241%2024.0445%209.37312V18.0711C24.0445%2018.9718%2023.3144%2019.702%2022.4137%2019.702H18.4384V22.4201C18.4384%2023.3208%2017.7083%2024.051%2016.8076%2024.051H9.36671C8.46601%2024.051%207.73584%2023.3208%207.73584%2022.4201V16.9839C7.73584%2016.0832%208.46601%2015.353%209.36671%2015.353H10.2841V9.37312ZM10.2841%2016.9839H9.36671L9.36671%2022.4201H16.8076L16.8076%2019.702H11.9149C11.0142%2019.702%2010.2841%2018.9718%2010.2841%2018.0711V16.9839Z'%20fill='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.6626%2016.6642C19.4377%2016.8418%2019.1547%2016.9476%2018.8472%2016.9476C18.1148%2016.9476%2017.521%2016.3472%2017.521%2015.6067C17.521%2014.8661%2018.1148%2014.2657%2018.8472%2014.2657C19.1547%2014.2657%2019.4377%2014.3715%2019.6626%2014.5491C19.8875%2014.3715%2020.1706%2014.2657%2020.4781%2014.2657C21.2105%2014.2657%2021.8042%2014.8661%2021.8042%2015.6067C21.8042%2016.3472%2021.2105%2016.9476%2020.4781%2016.9476C20.1706%2016.9476%2019.8875%2016.8418%2019.6626%2016.6642Z'%20fill='white'/%3e%3c/svg%3e" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem]">Subscription</h2>
+              <p class="font-mullish text-grayText mt-6">Subscription plans with automated recurring transactions on various payment modes.</p>
+            </div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+        <!--box5-->
+
+        <div class="w-full min-h-[15rem] relative cursor-pointer :hover drop-shadow-2xl ">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20id='Layer_1'%20x='0'%20y='0'%20viewBox='0%200%20318%20305'%20xml:space='preserve'%3e%3cstyle%3e.st0{opacity:.1;enable-background:new}.st0,.st2{fill:%23C4DDF9}.st3{opacity:.1;fill:%23C4DDF9;enable-background:new}%3c/style%3e%3cpath%20class='st0'%20d='M45.8-.5H.5v15.9l109.3%2045.5%2047.9%2020%2030-74.6%202.7-6.8z'/%3e%3cpath%20class='st0'%20d='M190.4-.5h6.9l-9.6%206.8-77.9%2054.6L79%2082.5.5%2027.7V1.5l45.3-2z'/%3e%3cg%20opacity='.2'%3e%3ccircle%20class='st2'%20cx='2'%20cy='230'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='240'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='2'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='230'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='240'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='9'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='240'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='16'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='240'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='23'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='30'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='250'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='37'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='44'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='44'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='44'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='44'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='44'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='51'%20cy='260'%20r='2'/%3e%3ccircle%20class='st2'%20cx='51'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='51'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='51'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='51'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='58'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='58'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='58'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='58'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='65'%20cy='270'%20r='2'/%3e%3ccircle%20class='st2'%20cx='65'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='65'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='65'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='72'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='72'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='72'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='79'%20cy='280'%20r='2'/%3e%3ccircle%20class='st2'%20cx='79'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='79'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='86'%20cy='290'%20r='2'/%3e%3ccircle%20class='st2'%20cx='86'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='93'%20cy='300'%20r='2'/%3e%3ccircle%20class='st2'%20cx='100'%20cy='300'%20r='2'/%3e%3c/g%3e%3cpath%20class='st3'%20d='M317.5%20258.3v46.2h-49l-1.9-6.9-6.6-24.7z'/%3e%3cpath%20class='st3'%20d='M317.5%20279.1v25.4H250l-.2-.7%2016.8-6.2z'/%3e%3c/svg%3e" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem]">Route</h2>
+              <p class="font-mullish text-grayText mt-6">Split incoming payments automatically to vendor’s accounts, manage marketplace money flow...</p>
+            </div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+        <!--box6-->
+
+        <div class="w-full min-h-[15rem] relative cursor-pointer drop-shadow-2xl">
+          <img class="bg-lightBlue500 absolute right-3 top-3 rounded-full z-[8]  w-12 h-12
+          transition-all duration-200" 
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='44'%20height='41'%20viewBox='0%200%2044%2041'%3e%3cg%20fill='none'%20transform='translate(-3%20-3)'%3e%3ccircle%20cx='23.42'%20cy='23.57'%20r='19.59'%20fill='%237BC8FF'/%3e%3cpath%20fill='%23FFF'%20d='M47%2035.1V5.74c0-.99-.88-1.86-1.88-1.86H23.5v.1A19.54%2019.54%200%200%200%203.87%2023.53c0%205.15%201.95%209.9%205.2%2013.3h36.05c1%200%201.88-.74%201.88-1.73z'/%3e%3ccircle%20cx='23.42'%20cy='23.57'%20r='13.29'%20fill='%230B3E86'/%3e%3cg%20fill='%23FFF'%3e%3cpath%20d='M16.32%2020.88c0-.18.13-.43.28-.53l6.55-4.68c.15-.1.4-.1.55%200l6.35%204.69c.16.1.23.35.23.54v.62c0%20.19-.06.04-.25.04H16.66c-.19%200-.34%200-.34-.19v-.49zm.24%207.82c.1-.17.32-.35.5-.35h12.7c.19%200%20.42.18.51.34l.63%201.08c.1.17.02.27-.17.27H16.11c-.18%200-.26-.1-.17-.27l.62-1.08z'/%3e%3cpath%20d='M21.8%2022.53v.83c0%20.3.13.38.43.38h.25l-.63%204.85h3.13l-.58-4.85h.2c.3%200%20.6-.08.6-.38v-.83h-3.4zm-4.36%200v.83c0%20.3%200%20.38.3.38H18l-.62%204.85h3.13l-.58-4.85h.2c.3%200%20.72-.08.72-.38v-.83h-3.4zm8.72%200v.83c0%20.3.25.38.55.38h.25l-.63%204.85h3.13l-.58-4.85h.2c.3%200%20.48-.08.48-.38v-.83h-3.4z'/%3e%3c/g%3e%3cpath%20fill='%237BC8FF'%20d='M30.7%206.58a4.84%204.84%200%200%200%204.84%204.84%204.85%204.85%200%200%200%204.02-7.54h-8.05c-.5.72-.8%201.71-.8%202.7z'/%3e%3cpath%20fill='%23FFF'%20d='M36.72%208.07c-.2.2-.48.33-.82.4v.6h-.66v-.59c-.5-.04-.89-.18-1.19-.42l.28-.6c.3.21.62.34.97.37v-.97a3.89%203.89%200%200%201-.61-.21%201.1%201.1%200%200%201-.42-.33.92.92%200%200%201-.17-.58c0-.3.1-.54.32-.75.2-.21.48-.35.82-.4v-.6h.66v.59c.2.03.4.08.58.15.19.07.34.16.45.26l-.27.6c-.26-.18-.53-.3-.81-.35v1c.24.06.43.12.6.2a.9.9%200%200%201%20.57.9%201%201%200%200%201-.3.73zm-1.68-2.15a.6.6%200%200%200%20.26.16v-.83a.53.53%200%200%200-.26.16.4.4%200%200%200-.1.28c0%20.1.03.17.1.23zm1.14%201.45a.28.28%200%200%200-.09-.21.73.73%200%200%200-.24-.15v.78c.22-.07.33-.2.33-.42z'/%3e%3cpath%20fill='%237BC8FF'%20d='M45.75%2021.5a6.9%206.9%200%201%200%201.21%2013.72c0-.04.04-.08.04-.12V21.6a8.3%208.3%200%200%200-1.25-.1z'/%3e%3cpath%20fill='%23FFF'%20d='M47%2024.95v-.97h-4.36v1.22h1.46c.84%200%201.42.24%201.53.96h-3v.97h3c-.1.73-.81%201.22-1.8%201.22h-1.2v.71l2.86%203.65H47v-.4l-2.44-3h.09c1.04%200%202.1-.62%202.35-1.47v-2.01c-.24-.28-.24-.52-.48-.67v-.2H47z'/%3e%3c/g%3e%3c/svg%3e" alt="">
+          <!--box-shape-->
+          <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+            style="stroke-opacity: 0.15">
+            <path d="m 0 6 
+        a 6 6 0 0 1 6 -6 
+        h 250.32501220703125 
+        a 16 16 0 0 1 11 5 
+        l 77 77 
+        a 16 16 0 0 1 5 11 
+        v 126 
+        a 6 6 0 0 1 -6 6 
+        h -337.32501220703125 
+        a 6 6 0 0 1 -6 -6 
+        z" fill="#fff"></path>
+          </svg>
+          <!--box content-->
+          <div class="flex flex-col z-[100] absolute w-full justify-between pl-5 py-6 pr-8">
+            <!--text part-->
+            <div>
+              <h2 class="font-mullish font-extrabold text-deepBlue leading-[1.2] text-[1.375rem]">Smart Collect</h2>
+              <p class="font-mullish text-grayText mt-6">Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Customer Identifiers & UPI-IDs</p>
+            </div>
+
+            <div class="flex self-start md:items-center cursor-pointer group mt-12">
+              <a href="#" class="font-mullish font-bold text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+       
+
+      </div>
+     
+        <div class="flex flex-row items-center justify-between bg-gradient-to-b from-indigo-200 px-36 mt-6 rounded-md py-4 border-2 border-indigo-600"> 
+          <div>
+          <h3 class="font-mullish font-bold ">Not sure which product to choose?</h3></div>
+          <div>
+          <h3 class="font-mullish  ">Answer a few questions and we'll help you out</h3>
+        </div>
+        <div class="flex self-start md:items-center cursor-pointer group ml-5">
+          <a href="#" class="font-mullish font-bold text-lightBlue500 
+            group-hover:text-grayBlue transition-all duration-200">find me a product</a>
+          <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+            group-hover:text-grayBlue transition-all duration-200"></i>
+        </div>
+      </div>
+  
+  </section>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
